@@ -1,0 +1,53 @@
+---
+title: 'Razón neutrófilos - linfocitos en el pronóstico de sobrevida en los pacientes con melanoma maligno cutáneo del Instituto Nacional De Enfermedades Neoplásicas 2005-2012'
+subtitle: 'Bioestadística - Proyecto Final'
+author:
+- Flor Castillo Silva
+- Gabriela Polo Mendoza
+- Diego Linares Trelles
+- Roosevelt Ubaldo Chavez
+date: "27 de marzo del 2021"
+lang: es
+header-includes: |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \headheight=14pt
+    \fancyhf{}
+    \lhead{BI0025 Bioinformática y Bioestadística}
+    \rhead{Proyecto Final}
+    \thispagestyle{fancy}
+    \fancyfoot[C]{\thepage}
+geometry: margin=1.0in
+output:
+  pdf_document:
+    number_sections: true
+    toc: yes
+  html_notebook: default
+
+---
+
+\newpage{}
+
+# Introducción
+
+# Objetivos
+
+# Desarrollo
+
+## Paquetes utilizados
+
+## Carga y limpieza de la base de datos
+
+## Análisis Descriptivo
+
+### Clasificación de variables
+
+## Análisis Bivariado
+
+## Análisis Multivariado
+
+## Análisis Gráfico
+
+# Conclusiones
+
+# Referencias
