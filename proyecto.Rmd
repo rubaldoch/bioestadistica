@@ -1,0 +1,97 @@
+---
+title: 'Razón neutrófilos - linfocitos en el pronóstico de sobrevida en los pacientes con melanoma maligno cutáneo del Instituto Nacional De Enfermedades Neoplásicas 2005-2012'
+subtitle: 'Bioestadística - Proyecto Final'
+author:
+- Flor Castillo Silva
+- Gabriela Polo Mendoza
+- Diego Linares Trelles
+- Roosevelt Ubaldo Chavez
+date: "27 de marzo del 2021"
+lang: es
+header-includes: |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \headheight=14pt
+    \fancyhf{}
+    \lhead{BI0025 Bioinformática y Bioestadística}
+    \rhead{Proyecto Final}
+    \thispagestyle{fancy}
+    \fancyfoot[C]{\thepage}
+geometry: margin=1.0in
+output:
+  pdf_document:
+    number_sections: true
+    toc: yes
+  html_notebook: default
+---
+\newpage{}
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+# Introducción
+
+# Objetivos
+
+# Desarrollo
+
+## Paquetes utilizados
+
+```{r}
+require(readxl) #para leer archivos en formato .xlsx
+```
+
+
+## Carga y limpieza de la base de datos
+
+```{r  results = 'hide'}
+# Cargamos la base de datos
+data <- read_excel("database.xlsx")
+
+# Revisamos si se cargó correctamente
+head(data)
+```
+```{r  results = 'hide'}
+# Inspeccionamos brevemente la estructura de sus variables
+str(data)
+```
+
+Dado que existen dos columnas con valores para la variable Relación de Neurofilos - Linfocitos, tabularemos la cantidad de NAs de ambas variables y cogeremos la columna que posea menor cantidad de datos faltantes.
+
+```{r}
+# Remplazar '.' por NA
+cond1 <- data$relacion_neurofilos_linfocitos...35=='.'  #condicion
+data$relacion_neurofilos_linfocitos...35[cond1] <- NA # Valor
+cond2 <- data$relacion_neurofilos_linfocitos...39=='.'  #condicion
+data$relacion_neurofilos_linfocitos...39[cond2] <- NA # Valor
+
+
+table(is.na(data$relacion_neurofilos_linfocitos...35)) # Columna 1
+
+table(is.na(data$relacion_neurofilos_linfocitos...39)) # Columna 2
+
+
+```
+
+```{r}
+
+```
+
+
+## Análisis Descriptivo
+
+### Clasificación de variables
+
+## Análisis Bivariado 
+
+## Análisis Multivariado
+
+## Análisis Gráfico
+
+# Conclusiones
+```{r}
+
+```
+
+# Referencias
