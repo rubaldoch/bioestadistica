@@ -191,6 +191,14 @@ data$relacion_neurofilos_linfocitos...35[cond1] <- NA # Valor
 cond2 <- data$relacion_neurofilos_linfocitos...39=='.'  #condicion
 data$relacion_neurofilos_linfocitos...39[cond2] <- NA # Valor
 
+# Reemplazar color de piel a Blanco(0) y No Blanco(1)
+cond3<-data$color_de_piel==2 # condicion blanco
+data$color_de_piel[cond3] <- 0
+cond4<-data$color_de_piel==1 | data$color_de_piel==3 # condicion no blanco
+data$color_de_piel[cond4] <- 1
+
+
+
 table(is.na(data$relacion_neurofilos_linfocitos...35)) # Columna 1
 
 table(is.na(data$relacion_neurofilos_linfocitos...39)) # Columna 2
