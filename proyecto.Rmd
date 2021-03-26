@@ -199,10 +199,6 @@ table(is.na(data$relacion_neurofilos_linfocitos...39)) # Columna 2
 data_limpia <- data[!cond1,] 
 ```
 
-```{r}
-paste(unique(tolower(data$morfologia)), collapse=', ')
-```
-
 
 ## Análisis Descriptivo
 
